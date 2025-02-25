@@ -152,8 +152,8 @@ del, s, strike {
     background-size: auto var(--liberty-navbar-logo-size, 1.9rem);
     background-position: left center;
     margin: var(--liberty-navbar-logo-margin, 0);
-    display: grid;
-    place-content: center;
+    /* display: grid;
+    place-content: center; */
 }
 
 .Liberty .nav-wrapper .navbar .navbar-nav .nav-item {
