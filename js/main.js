@@ -40,6 +40,7 @@ function setStyles() {
         '--liberty-navbar-logo-width': CONFIG['skin.clue.navbar_logo_width'],
         '--liberty-navbar-logo-size': CONFIG['skin.clue.navbar_logo_size'],
         '--liberty-navbar-logo-padding': CONFIG['skin.clue.navbar_logo_padding'],
+        '--liberty-navbar-logo-text-padding': CONFIG['skin.clue.navbar_logo_text_padding'],
         '--liberty-navbar-logo-minimum-margin-left': CONFIG['skin.clue.navbar_logo_minimum_margin_left'],
         '--liberty-navbar-logo-minimum-margin': CONFIG['skin.clue.navbar_logo_minimum_margin'],
         '--liberty-navbar-logo-margin': CONFIG['skin.clue.navbar_logo_margin'],

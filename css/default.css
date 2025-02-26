@@ -155,7 +155,7 @@ del, s, strike {
     margin: var(--liberty-navbar-logo-margin, 0);
     /* display: grid;
     place-content: center; */
-    padding-top: 5px;
+    padding-top: var(--liberty-navbar-logo-text-padding, 5px);
 }
 
 .Liberty .nav-wrapper .navbar .navbar-nav .nav-item {
