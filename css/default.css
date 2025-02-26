@@ -146,14 +146,16 @@ del, s, strike {
 
 .Liberty .nav-wrapper .navbar .navbar-brand {
     height: 2.8rem;
-    width: var(--liberty-navbar-logo-width, 8rem);
+    width: var(--liberty-navbar-logo-width, 7rem);
     background-image: var(--liberty-navbar-logo-image, none);
     background-repeat: no-repeat no-repeat;
     background-size: auto var(--liberty-navbar-logo-size, 1.9rem);
     background-position: left center;
+    margin-left: var(--liiberty-naver-logo-margin-left, 10px) !important;
     margin: var(--liberty-navbar-logo-margin, 0);
     /* display: grid;
     place-content: center; */
+    padding-top: 5px;
 }
 
 .Liberty .nav-wrapper .navbar .navbar-nav .nav-item {
@@ -285,6 +287,8 @@ del, s, strike {
 }
 
 #login-menu>.fa {
+    margin-left: 10px;
+    font-size: 1.3rem;
     line-height: 0.6rem;
     height: 1.5rem;
     width: 1.5rem;
