@@ -44,6 +44,7 @@ function setStyles() {
         '--liberty-navbar-logo-minimum-margin-left': CONFIG['skin.clue.navbar_logo_minimum_margin_left'],
         '--liberty-navbar-logo-minimum-margin': CONFIG['skin.clue.navbar_logo_minimum_margin'],
         '--liberty-naver-logo-minimum-margin-top': CONFIG['skin.clue.navbar_logo_minimum_margin_top'],
+        '--liberty-naver-logo-margin-top': CONFIG['skin.clue.navbar_logo_margin_top'],
         '--liberty-navbar-logo-margin': CONFIG['skin.clue.navbar_logo_margin'],
         '--brand-color-1': 'var(--liberty-brand-color)',
         '--brand-color-2': selectByTheme(CONFIG['skin.clue.brand_color_2'] ?? 'var(--liberty-brand-color)', 'var(--liberty-brand-color)'),

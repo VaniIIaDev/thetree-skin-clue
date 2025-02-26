@@ -152,6 +152,7 @@ del, s, strike {
     background-size: auto var(--liberty-navbar-logo-size, 1.9rem);
     background-position: left center;
     margin-left: var(--liberty-naver-logo-margin-left, 10px) !important;
+    margin-top: var(--liberty-naver-logo-margin-top, 0) !important;
     margin: var(--liberty-navbar-logo-margin, 0);
     /* display: grid;
     place-content: center; */
