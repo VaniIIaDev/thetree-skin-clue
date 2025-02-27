@@ -57,21 +57,18 @@ window.requestable = <%=JSON.stringify(requestable)%>;
                 <%for(let m of session.menus) {%>
                 <%if(m.t === '권한') {%>
                   <a href="/admin/grant" class="dropdown-item"><span class="fa fa-solid fa-user-gear"></span> 권한</a>
-                <%}%>
-                <%if(m.t === '로그인 기록 조회') {%>
+                <%} else if(m.t === '로그인 기록 조회') {%>
                   <a href="/admin/login_history" class="dropdown-item"><span class="fa fa-solid fa-user-check"></span> 로그인 기록 조회</a>
-                <%}%>
-                <%if(m.t === 'ACL Group') {%>
+                <%} else if(m.t === 'ACL Group') {%>
                   <a href="/aclgroup" class="dropdown-item"><span class="fa fa-solid fa-user-minus"></span> ACL Group</a>
-                <%}%>
-                <%if(m.t === '일괄 되돌리기') {%>
+                <%} else if(m.t === '일괄 되돌리기') {%>
                   <a href="/admin/batch_revert" class="dropdown-item"><span class="fa fa-clock-rotate-left fa-solid"></span> 일괄 되돌리기</a>
-                <%}%>
-                <%if(m.t === '설정') {%>
+                <%} else if(m.t === '설정') {%>
                   <a href="/admin/config" class="dropdown-item"><span class="fa fa-gear fa-solid"></span> 설정</a>
-                <%}%>
-                <%if(m.t === '개발자 설정') {%>
+                <%} else if(m.t === '개발자 설정') {%>
                   <a href="/admin/developer" class="dropdown-item"><span class="fa fa-code fa-solid"></span> 개발자 설정</a>
+                <%} else {%>
+                  <a href="<%=m.l%>" class="dropdown-item"><span class="fa fa-solid fa-crown"></span> <%=m.t%></a>
                 <%}%>
                 <%}%>
                 <%}%>
@@ -107,13 +104,14 @@ window.requestable = <%=JSON.stringify(requestable)%>;
               <div class="dropdown-divider"></div>
               <%if(session.account.type === UserTypes.Account) {%>
                 <a href="/member/mypage" class="dropdown-item"><span class="fa fa-solid fa-user-gear"></span> 내 정보</a>
-                <a :href="doc_action_link(user_doc($store.state.session.account.name), 'w')" class="dropdown-item"><span class="fa fa-solid fa-file-text"></span> 사용자 문서</a>
+                <a :href="doc_action_link(user_doc($store.state.session.account.name), 'w')" class="dropdown-item"><span class="fa fa-solid fa-address-card"></span> 사용자 문서</a>
                 <a href="/member/starred_documents" class="dropdown-item"><span class="fa fa-solid fa-folder-open"></span> 내 문서함</a>
                 <div class="dropdown-divider"></div>
               <%}%>
               <%if(session.account.uuid) {%>
-                <a class="dropdown-item" :href="contribution_link($store.state.session.account.uuid)"><span class="fa fa-solid fa-edit"></span> 내 문서 기여 목록</a>
-                <a class="dropdown-item" :href="contribution_link_discuss($store.state.session.account.uuid)"><span class="fa fa-solid fa-commenting"></span> 토론 기여 목록</a>
+                <a class="dropdown-item" :href="contribution_link($store.state.session.account.uuid)"><span class="fa fa-solid fa-user-edit"></span> 내 문서 기여 목록</a>
+                <a class="dropdown-item" :href="contribution_link_discuss($store.state.session.account.uuid)"><span class="fa fa-solid fa-comments"></span> 내 토론 기여 목록</a>
+                <a class="dropdown-item" :href="contribution_link_edit_request($store.state.session.account.uuid)"><span class="fa fa-solid fa-code-pull-request"></span> 내 편집 요청 목록</a>
                 <div class="dropdown-divider"></div>
               <%}%>
               <%if(session.account.type === UserTypes.Account) {%>
@@ -209,7 +207,7 @@ window.requestable = <%=JSON.stringify(requestable)%>;
             %>
           
             <% if (page.data.rev) { %>
-              <span class="header-date-text">편집 시각: (<%- getFullDateTag(timestamp, 'relative') %>)</span>
+              <span class="header-date-text">편집 시각: <%- getFullDateTag(timestamp, 'relative') %></span>
             <% } else { %>
               <span class="header-date-text"><span x-html="'마지막 편집: ' + getFullDateTag(new Date(<%= timestamp %>), 'relative')"></span></span>
             <% } %>     

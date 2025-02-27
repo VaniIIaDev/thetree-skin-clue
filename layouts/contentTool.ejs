@@ -44,7 +44,7 @@ const contentTool = {
           });
           if (this.data.editable === true && this.data.edit_acl_message) this.main.push({
             onclick: () => $store.skin.showEditMessage(),
-            html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-edit"></span> 편집 요청`
+            html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-code-pull-request"></span> 편집 요청`
           });
           else if (this.data.editable === false && this.data.edit_acl_message) this.main.push({
             onclick: () => $store.skin.showEditMessage(),
@@ -52,7 +52,7 @@ const contentTool = {
           });
           else this.main.push({
               to: doc_action_link(this.data.document, 'edit'),
-              html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-pen"></span> 편집`
+              html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-edit"></span> 편집`
             });
           if (this.data.discuss_progress === true) this.main.push({
             to: doc_action_link(this.data.document, 'discuss'),
@@ -70,6 +70,14 @@ const contentTool = {
           this.menu.push({
             to: doc_action_link(this.data.document, 'acl'),
             html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-file-shield"></span> ACL`
+          });
+          this.menu.push({
+            to: doc_action_link(this.data.document, 'move'),
+            html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-suitcase-rolling"></span> 문서 이동`
+          });
+          this.menu.push({
+            to: doc_action_link(this.data.document, 'delete'),
+            html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-trash"></span> 문서 삭제`
           });
           if (this.data.user) {
             this.menu.push({
@@ -106,38 +114,38 @@ const contentTool = {
         this.main.push({
           to: doc_action_link(this.data.document, 'history', this.data.rev ? { from: this.data.rev } : undefined),
           class: 'btn-info',
-          title: "역사"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-calendar"></span> 역사`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'w', uuid ? { uuid } : undefined),
           class: this.page.viewName === 'wiki' ? 'disabled' : null,
-          title: "보기"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-search"></span> 보기`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'raw', uuid ? { uuid } : undefined),
           class: this.page.viewName === 'raw' ? 'disabled' : null,
-          title: "RAW"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-file-text"></span> RAW`
         });
         this.menu.push({
           to: doc_action_link(this.data.document, 'blame', uuid ? { uuid } : undefined),
           class: this.page.viewName === 'blame' ? 'disabled' : null,
-          title: "blame"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-book"></span> blame`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'revert', uuid ? { uuid } : undefined),
           class: this.page.viewName === 'revert' ? 'disabled' : null,
-          title: "되돌리기"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-history"></span> 되돌리기`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'diff', uuid ? { uuid } : undefined),
           class: this.page.viewName === 'diff' ? 'disabled' : null,
-          title: "비교"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-search-plus"></span> 비교`
         });
         break;
       case 'notfound':
         this.menu.push({
           to: doc_action_link(this.data.document, 'backlink'),
-          title: "역링크"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-anchor"></span> 역링크`
         });
         if (this.data.edit_acl_message) this.main.push({
           onclick: () => $store.skin.showEditMessage(),
@@ -145,100 +153,109 @@ const contentTool = {
         });
         else this.main.push({
           to: doc_action_link(this.data.document, 'edit'),
-          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-pen"></span> 편집`
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-edit"></span> 편집`
         });
-        this.main.push({
+        if (this.data.discuss_progress === true) this.main.push({
           to: doc_action_link(this.data.document, 'discuss'),
-          class: this.data.discuss_progress ? 'btn-discuss-progress' : null,
-          title: "토론"
+          class: 'btn-discuss-progress',
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-commenting"></span> 토론 중`
+        });
+        else this.main.push({
+          to: doc_action_link(this.data.document, 'discuss'),
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-comment"></span> 토론`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'history', this.data.rev ? { from: this.data.rev } : undefined),
-          title: "역사"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-calendar"></span> 역사`
         });
         this.menu.push({
           to: doc_action_link(this.data.document, 'acl'),
-          title: "ACL"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-file-shield"></span> ACL`
         });
         break;
       case 'edit':
         this.main.push({
           to: doc_action_link(this.data.document, 'move'),
-          title: "이동"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-suitcase-rolling"></span> 이동`
         });
         this.main.push({
           class: "btn-danger",
           to: doc_action_link(this.data.document, 'delete'),
-          title: "삭제"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-trash"></span> 삭제`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'history'),
-          title: "역사"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-calendar"></span> 역사`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'acl') + '#document.edit',
-          title: "ACL"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-file-shield"></span> ACL`
         });
         break;
       case 'edit_edit_request':
         this.main.push({
           to: doc_action_link(this.data.document, 'history'),
-          title: "역사"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-calendar"></span> 역사`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'acl') + '#document.edit_request',
-          title: "ACL"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-edit"></span> 편집`
         });
         break;
       case 'history':
-        this.main.push({
+        if (this.data.discuss_progress === true) this.main.push({
           to: doc_action_link(this.data.document, 'discuss'),
-          title: "토론"
+          class: 'btn-discuss-progress',
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-commenting"></span> 토론 중`
+        });
+        else this.main.push({
+          to: doc_action_link(this.data.document, 'discuss'),
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-comment"></span> 토론`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'edit'),
-          title: "편집"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-edit"></span> 편집`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'acl'),
-          title: "ACL"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-edit"></span> 편집`
         });
         break;
       case 'thread_list':
         this.main.push({
           to: doc_action_link(this.data.document, 'edit'),
-          title: "편집"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-edit"></span> 편집`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'acl') + '#document.create_thread',
-          title: "ACL"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-edit"></span> 편집`
         });
         break;
       case 'thread_list_close':
       case 'edit_request_close':
         this.main.push({
           to: doc_action_link(this.data.document, 'discuss'),
-          title: "토론"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-comment"></span> 토론`
         });
         break;
       case 'thread':
         this.main.push({
           to: doc_action_link(this.data.document, 'discuss'),
-          title: "토론"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-comment"></span> 토론`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'acl') + '#document.write_thread_comment',
-          title: "ACL"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-file-shield"></span> ACL`
         });
         break;
       case 'edit_request':
         this.main.push({
           to: doc_action_link(this.data.document, 'discuss'),
-          title: "토론"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-comment"></span> 토론`
         });
         this.main.push({
           to: doc_action_link(this.data.document, 'acl') + '#document.edit',
-          title: "ACL"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-file-shield"></span> ACL`
         });
         break;
       case 'contribution':
@@ -247,7 +264,7 @@ const contentTool = {
         this.main.push({
           to: this.data.account.type === UserTypes.Account ? doc_action_link(user_doc(this.data.account.name), 'w') : '',
           class: this.data.account.type === UserTypes.Account ? '' : 'disabled',
-          title: "사용자 문서"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-address-card"></span> 사용자 문서`
         });
         if (session.quick_block) {
           if (page.data.account.type !== UserTypes.Deleted) this.menu.push({
@@ -257,29 +274,33 @@ const contentTool = {
               ip: page.data.account.type === 0 ? page.data.account.name + '/' + (page.data.account.name.indexOf('.') === -1 ? "128" : '32') : undefined,
               note: '기여 목록 긴급차단'
             }),
-            title: "사용자 차단"
+            html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-user-minus"></span> 사용자 차단`
           });
           if (page.data.account.type === -1 && page.data.account.uuid) this.menu.push({
             to: doc_action_link(user_doc('*' + page.data.account.uuid), 'w'),
             class: 'admin',
-            title: "삭제된 사용자 문서"
+            html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-user-slash"></span> 사용자 문서 <small>(삭제됨)</small>`
           });
           this.menu.push({
             class: 'admin',
             to: `/BlockHistory?query=${page.data.account.uuid}&target=text`,
-            title: "차단 내역"
+            html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-user-clock"></span> 차단 내역`
           });
           this.menu.push({
             class: 'admin',
             onclick: () => navigator.clipboard.writeText(page.data.account.uuid),
-            title: "UUID 복사"
+            html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-copy"></span> UUID 복사`
           });
         }
         break;
       case '':
         if (page.title === '오류') this.main.push({
           onclick: () => history.back(),
-          title: "이전 화면"
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-history"></span> 이전 화면`
+        });
+        if (page.title === '오류') this.main.push({
+          to: `/`,
+          html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-house"></span> 대문으로`
         });
         break;
     }
