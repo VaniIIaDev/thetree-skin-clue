@@ -159,7 +159,7 @@ window.requestable = <%=JSON.stringify(requestable)%>;
           <%if(page.data.document && page.viewName !== 'error') {%>
           <h1 style="margin-bottom: 10px;">
             <a href="<%=doc_action_link(page.data.document, 'w')%>">
-              <%if(page.data.document.forceShowNamespace !== false) {%><span class="namespace"><%=page.data.document.namespace%></span><span class="hidetext1" style="font-size: 1px;margin-left:10px;">:</span><%}%><%=page.data.document.title%>
+              <%if(page.data.document.forceShowNamespace !== false) {%><span class="namespace"><%=page.data.document.namespace%></span><span class="hidetext1" style="font-size: 0px;margin-left:10px;">:</span><%}%><%=page.data.document.title%>
             </a>
             <%if(page.viewName === 'edit_edit_request' || page.viewName === 'edit_request') {%>
               <small>(편집 요청)</small>
