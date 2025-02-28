@@ -749,6 +749,10 @@ div.scroll-buttons {
     opacity: 0.8;
 }
 
+/* a.scroll-toc {
+    margin-right: 10px;
+} */
+
 div.scroll-buttons a {
     float: left;
     width: 42px;

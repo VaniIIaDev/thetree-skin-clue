@@ -159,7 +159,7 @@ window.requestable = <%=JSON.stringify(requestable)%>;
           <%if(page.data.document && page.viewName !== 'error') {%>
           <h1 style="margin-bottom: 10px;">
             <a href="<%=doc_action_link(page.data.document, 'w')%>">
-              <%if(page.data.document.forceShowNamespace !== false) {%><span class="namespace"><%=page.data.document.namespace%></span> <%}%><%=page.data.document.title%>
+              <%if(page.data.document.forceShowNamespace !== false) {%><span class="namespace"><%=page.data.document.namespace%></span><span class="hidetext1" style="font-size: 1px;margin-left:10px;">:</span><%}%><%=page.data.document.title%>
             </a>
             <%if(page.viewName === 'edit_edit_request' || page.viewName === 'edit_request') {%>
               <small>(편집 요청)</small>
@@ -199,7 +199,9 @@ window.requestable = <%=JSON.stringify(requestable)%>;
               <small>(r<%=page.data.rev%> 판)</small>
             <%}%>
           </h1>
-          <%if(page.viewName === 'wiki' && page.data.date) {%>
+          <%if(page.viewName !== 'wiki') {%>
+            <!-- <span class="header-date-text"><a @click.prevent="() => navigator.clipboard.writeText(page.data.document.namespace + ':' + page.data.document.title)" href="#" style="cursor: pointer; color: #777; text-decoration: none;"><span class="fa fa-solid fa-copy"></span> 문서명 복사</a></span> -->
+          <%} else if(page.viewName === 'wiki' && page.data.date) {%>
             <% 
               let timestamp = !isNaN(page.data.date) ? page.data.date : Math.floor(new Date(page.data.date).getTime() / 1000);
               let timeTag = getFullDateTag(timestamp);
@@ -207,13 +209,13 @@ window.requestable = <%=JSON.stringify(requestable)%>;
             %>
           
             <% if (page.data.rev) { %>
-              <span class="header-date-text">편집 시각: <%- getFullDateTag(timestamp, 'relative') %></span>
+              <span class="header-date-text"><!--<a @click.prevent="() => navigator.clipboard.writeText(page.data.document.namespace + ':' + page.data.document.title)" href="#" style="cursor: pointer; color: #777; text-decoration: none;"><span class="fa fa-solid fa-copy"></span> 문서명 복사</a> - --> 편집 시각: <%- getFullDateTag(timestamp, 'relative') %></span>
             <% } else { %>
-              <span class="header-date-text"><span x-html="'마지막 편집: ' + getFullDateTag(new Date(<%= timestamp %>), 'relative')"></span></span>
+              <span class="header-date-text"><!--<a @click.prevent="() => navigator.clipboard.writeText(page.data.document.namespace + ':' + page.data.document.title)" href="#" style="cursor: pointer; color: #777; text-decoration: none;"><span class="fa fa-solid fa-copy"></span> 문서명 복사</a> - --> 마지막 편집: <%- getFullDateTag(new Date(timestamp), 'relative') %></span>
             <% } %>     
           <%}%>
           <%} else {%>
-          <h1><%=page.title%></h1>
+            <h1><%=page.title%></h1>
           <%}%>
         </div>
       </div>
