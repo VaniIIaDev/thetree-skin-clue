@@ -83,7 +83,6 @@
 
     .Liberty .content-wrapper .liberty-content .notification .label {
         border-radius: 0;
-        margin-top: -8px !important;
         margin: 0;
     }
 
@@ -211,5 +210,17 @@
 
     .Liberty .nav-wrapper .navbar .form-inline {
         padding-top: 0.04rem;
+    }
+
+    .Liberty .content-wrapper {
+        margin-top: 0;
+    }
+
+    .Liberty .nav-wrapper {
+        position: relative;
+    }
+
+    .Liberty .content-wrapper .liberty-content .liberty-content-header {
+        border-radius: 0px;
     }
 }
