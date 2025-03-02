@@ -16,11 +16,11 @@ const contentTool = {
     switch(page.viewName) {
       case 'wiki':
         if (this.data.date === null) {
-          this.menu.push({
+          this.main.push({
             to: doc_action_link(this.data.document, 'backlink'),
             html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-anchor"></span> 역링크`
           });
-          this.menu.push({
+          this.main.push({
             to: doc_action_link(this.data.document, 'acl') + '#namespace.read',
             html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-solid fa-file-shield"></span> ACL`
           });
@@ -131,7 +131,7 @@ const contentTool = {
           class: this.page.viewName === 'blame' ? 'disabled' : null,
           html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-book"></span> blame`
         });
-        this.main.push({
+        this.menu.push({
           to: doc_action_link(this.data.document, 'revert', uuid ? { uuid } : undefined),
           class: this.page.viewName === 'revert' ? 'disabled' : null,
           html: `<span style="font-size: 1rem;margin-right: 3px;" class="fa fa-soild fa-history"></span> 되돌리기`
