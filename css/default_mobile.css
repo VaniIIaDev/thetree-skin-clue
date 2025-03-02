@@ -131,6 +131,19 @@
     .Liberty .content-wrapper .liberty-footer {
         padding: 0.5rem;
     }
+
+    .Liberty .content-wrapper .footer-recent {
+        border-radius: 0 !important;
+        margin: 0 !important;
+    }
+
+    .Liberty .content-wrapper .liberty-footer {
+        border-radius: 0 !important;
+    }
+
+    .recent-head-title {
+        border-radius: 0 !important;
+    }
 }
 
 /* Max-width: 798 메뉴 마지노선 테블릿 모드로 전환 시작하기위한 부분 */

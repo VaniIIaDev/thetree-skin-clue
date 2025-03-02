@@ -848,6 +848,7 @@ div.scroll-buttons a {
     background: var(--liberty-brand-color);
     margin-right: 20px;
     margin-top: 5px;
+    margin-bottom: 5px;
     float: right;
 }
 
@@ -888,4 +889,3 @@ div.scroll-buttons a {
 .dr-admin .ion {
     vertical-align: text-bottom;
 }
-
