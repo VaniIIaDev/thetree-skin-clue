@@ -215,3 +215,11 @@ body.theseed-dark-mode {
 .theseed-dark-mode .fa-star {
 	color: #ddd;
 }
+
+.theseed-dark-mode .dropdown-divider {
+    background-color: #777;
+}
+
+.theseed-dark-mode .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .btn-group>.btn {
+	border-color: #777;
+}
