@@ -4,53 +4,53 @@
 
 /* Max-width: 1023 데스크탑 마지노선 */
 @media (max-width: 1023px) {
-    .Liberty .nav-wrapper .navbar {
+    .Clue .nav-wrapper .navbar {
         padding: 0 0.5rem;
     }
 
-    .Liberty .nav-wrapper .navbar .form-inline {
+    .Clue .nav-wrapper .navbar .form-inline {
         float: left;
         padding: 0;
         padding-top: 0.25rem;
         padding-bottom: 0.5rem;
     }
 
-    .Liberty .nav-wrapper .navbar .form-inline .input-group {
+    .Clue .nav-wrapper .navbar .form-inline .input-group {
         display: table;
         width: 100%;
     }
 
-    .Liberty .nav-wrapper .navbar .form-inline .input-group .form-control {
+    .Clue .nav-wrapper .navbar .form-inline .input-group .form-control {
         width: 100%;
     }
 
-    .Liberty .nav-wrapper .navbar .form-inline .input-group .input-group-btn {
+    .Clue .nav-wrapper .navbar .form-inline .input-group .input-group-btn {
         width: 1%;
     }
 
-    .Liberty .content-wrapper {
+    .Clue .content-wrapper {
         margin-top: 5.89rem;
     }
 
-    .Liberty .content-wrapper .liberty-sidebar {
+    .Clue .content-wrapper .clue-sidebar {
         display: none;
     }
 
-    .Liberty .content-wrapper .liberty-content {
+    .Clue .content-wrapper .clue-content {
         margin-right: auto;
         padding-bottom: 0.5rem;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-header {
+    .Clue .content-wrapper .clue-content .clue-content-header {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-header .liberty-notice {
+    .Clue .content-wrapper .clue-content .clue-content-header .clue-notice {
         margin: 0.5rem;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools {
+    .Clue .content-wrapper .clue-content .clue-content-header .content-tools {
         text-align: right;
         padding: 0.5rem;
         /* border-top: 1px solid #e1e8ed; */
@@ -59,85 +59,85 @@
         white-space: nowrap;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .btn-group {
+    .Clue .content-wrapper .clue-content .clue-content-header .content-tools .btn-group {
         display: block;
         position: unset;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .btn-group>.btn {
+    .Clue .content-wrapper .clue-content .clue-content-header .content-tools .btn-group>.btn {
         float: none;
         position: unset;
         margin: -.15rem;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-header .title {
+    .Clue .content-wrapper .clue-content .clue-content-header .title {
         padding: 0.5rem;
         min-height: 48px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
-    .Liberty .content-wrapper .footer-recent {
+    .Clue .content-wrapper .footer-recent {
         display: block;
     }
 
-    .Liberty .content-wrapper .liberty-content .notification .label {
+    .Clue .content-wrapper .clue-content .notification .label {
         border-radius: 0;
         margin: 0;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-header .contentSub {
+    .Clue .content-wrapper .clue-content .clue-content-header .contentSub {
         margin-top: -0.25rem;
         padding: 0.5rem;
         padding-top: 0;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-header .header-ads {
+    .Clue .content-wrapper .clue-content .clue-content-header .header-ads {
         margin: 0.5rem;
         margin-bottom: 0;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-main {
+    .Clue .content-wrapper .clue-content .clue-content-main {
         padding: 0.5rem;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-main #upload-div {
+    .Clue .content-wrapper .clue-content .clue-content-main #upload-div {
         display: none;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
+    .Clue .content-wrapper .clue-content .clue-content-main iframe {
         width: 80%;
         height: 30rem;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-main .mobile-table-wrapper {
+    .Clue .content-wrapper .clue-content .clue-content-main .mobile-table-wrapper {
         overflow-x: auto;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-header,
-    .Liberty .content-wrapper .liberty-content .liberty-content-main,
-    .Liberty .content-wrapper .liberty-footer {
+    .Clue .content-wrapper .clue-content .clue-content-header,
+    .Clue .content-wrapper .clue-content .clue-content-main,
+    .Clue .content-wrapper .clue-footer {
         border-left: none;
         border-right: none;
     }
 
-    .Liberty .content-wrapper .liberty-content .bottom-ads {
+    .Clue .content-wrapper .clue-content .bottom-ads {
         padding: 0.5rem;
         background-color: #fff;
         border-left: 1px solid #e1e8ed;
         border-right: 1px solid #e1e8ed;
     }
 
-    .Liberty .content-wrapper .liberty-footer {
+    .Clue .content-wrapper .clue-footer {
         padding: 0.5rem;
     }
 
-    .Liberty .content-wrapper .footer-recent {
+    .Clue .content-wrapper .footer-recent {
         border-radius: 0 !important;
         margin: 0 !important;
     }
 
-    .Liberty .content-wrapper .liberty-footer {
+    .Clue .content-wrapper .clue-footer {
         border-radius: 0 !important;
     }
 
@@ -148,16 +148,16 @@
 
 /* Max-width: 798 메뉴 마지노선 테블릿 모드로 전환 시작하기위한 부분 */
 @media (max-width: 798px) {
-    .Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fa {
+    .Clue .nav-wrapper .navbar .navbar-nav .nav-item .fa {
         text-align: center;
         margin: 0 0.25rem;
     }
 
-    .Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link .hide-title {
+    .Clue .nav-wrapper .navbar .navbar-nav .nav-item .nav-link .hide-title {
         display: none;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
+    .Clue .content-wrapper .clue-content .clue-content-main iframe {
         width: 90%;
         height: 20rem;
     }
@@ -165,26 +165,26 @@
 
 /* Max-width: 520px 테블릿 이하 시작 부분 */
 @media (max-width: 520px) {
-    .Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
+    .Clue .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
         padding: 0.7rem 0.3rem;
     }
 
-    .Liberty .nav-wrapper .navbar .navbar-login .view-logout {
+    .Clue .nav-wrapper .navbar .navbar-login .view-logout {
         display: block;
     }
 
-    .Liberty .nav-wrapper .navbar .navbar-login .hide-logout {
+    .Clue .nav-wrapper .navbar .navbar-login .hide-logout {
         display: none;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox,
-    .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable {
+    .Clue .content-wrapper .clue-content .clue-content-main table.infobox,
+    .Clue .content-wrapper .clue-content .clue-content-main table.wikitable {
         float: none !important;
         width: 100% !important;
         margin: auto !important;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
+    .Clue .content-wrapper .clue-content .clue-content-main iframe {
         width: 100%;
         height: 15rem;
     }
@@ -196,44 +196,61 @@
 
 /* Max-width: 397px 대형폰 이하 시작 부분 */
 @media (max-width: 397px) {
-    .Liberty .nav-wrapper .navbar .navbar-brand {
-        margin-left: var(--liberty-navbar-logo-minimum-margin-left, 0) !important;
-        margin: var(--liberty-navbar-logo-minimum-margin, 0);
-        width: var(--liberty-navbar-logo-minimum-width, 5rem);
-        margin-top: var(--liberty-navbar-logo-minimum-margin-top, 0) !important;
+    .Clue .nav-wrapper .navbar .navbar-brand {
+        margin-left: var(--clue-navbar-logo-minimum-margin-left, 0) !important;
+        margin: var(--clue-navbar-logo-minimum-margin, 0);
+        width: var(--clue-navbar-logo-minimum-width, 5rem);
+        margin-top: var(--clue-navbar-logo-minimum-margin-top, 0) !important;
         /* 모바일에서 Libre 로고 나타내는 거 수정 */
         /*background: transparent url(../img/logo.png?2015-12-18T21:00:00Z) no-repeat scroll left center/auto 1.5rem*/
     }
 
-    .Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link::after {
+    .Clue .nav-wrapper .navbar .navbar-nav .nav-item .nav-link::after {
         display: none;
     }
 
-    .Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
+    .Clue .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
         padding: 0.7rem 0.2rem;
     }
 
-    .Liberty .nav-wrapper .navbar .navbar-login {
+    .Clue .nav-wrapper .navbar .navbar-login {
         padding-left: 0.4rem;
     }
 
-    .Liberty .nav-wrapper .navbar .navbar-notification {
+    .Clue .nav-wrapper .navbar .navbar-notification {
         padding-left: 0.4rem;
     }
 
-    .Liberty .nav-wrapper .navbar .form-inline {
+    .Clue .nav-wrapper .navbar .form-inline {
         padding-top: 0.04rem;
     }
 
-    .Liberty .content-wrapper {
+    .Clue .content-wrapper {
         margin-top: 0;
     }
 
-    .Liberty .nav-wrapper {
+    .Clue .nav-wrapper {
         position: relative;
     }
 
-    .Liberty .content-wrapper .liberty-content .liberty-content-header {
+    .Clue .content-wrapper .clue-content .clue-content-header {
         border-radius: 0px;
+    }
+
+    .live-recent-content {
+        border: 0 !important;
+    }
+
+    .Clue .content-wrapper .footer-recent {
+        border: 0 !important;
+    }
+
+    .theseed-dark-mode .recent-head-title {
+        border-bottom-color: #777 !important;
+        border-top: 1px solid #777;
+    }
+
+    .recent-head-title {
+        border-top: 1px solid #e1e8ed;
     }
 }

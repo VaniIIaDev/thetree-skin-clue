@@ -31,31 +31,31 @@ const brand_color = () => selectByTheme(CONFIG['theme_color'] ?? '#4188f1', '#2d
 const style = document.createElement('style');
 function setStyles() {
     const styles = {
-        '--liberty-brand-color': brand_color(),
-        '--liberty-brand-dark-color': selectByTheme(CONFIG['skin.clue.brand_dark_color_1'] ?? darkenColor(brand_color()), '#16171a'),
-        '--liberty-brand-bright-color': selectByTheme(CONFIG['skin.clue.brand_bright_color_1'] ?? lightenColor(brand_color()), '#383b40'),
-        '--liberty-brand-notice-color': selectByTheme(CONFIG['skin.clue.brand_notice_color'] ?? '#d9edf7', '#d9edf7'),
-        '--liberty-navbar-logo-image': CONFIG['logo_image'] && `url(${CONFIG['logo_image']})`,
-        '--liberty-navbar-logo-minimum-width': CONFIG['skin.clue.navbar_logo_minimum_width'],
-        '--liberty-navbar-logo-width': CONFIG['skin.clue.navbar_logo_width'],
-        '--liberty-navbar-logo-size': CONFIG['skin.clue.navbar_logo_size'],
-        '--liberty-navbar-logo-padding': CONFIG['skin.clue.navbar_logo_padding'],
-        '--liberty-navbar-logo-text-padding': CONFIG['skin.clue.navbar_logo_text_padding'],
-        '--liberty-navbar-logo-minimum-margin-left': CONFIG['skin.clue.navbar_logo_minimum_margin_left'],
-        '--liberty-navbar-logo-margins-left': CONFIG['skin.clue.navbar_logo_margin_left'],
-        '--liberty-navbar-logo-minimum-margin': CONFIG['skin.clue.navbar_logo_minimum_margin'],
-        '--liberty-navbar-logo-minimum-margin-top': CONFIG['skin.clue.navbar_logo_minimum_margin_top'],
-        '--liberty-navbar-logo-margin-top': CONFIG['skin.clue.navbar_logo_margin_top'],
-        '--liberty-navbar-logo-margin': CONFIG['skin.clue.navbar_logo_margin'],
-        '--brand-color-1': 'var(--liberty-brand-color)',
-        '--brand-color-2': selectByTheme(CONFIG['skin.clue.brand_color_2'] ?? 'var(--liberty-brand-color)', 'var(--liberty-brand-color)'),
-        '--brand-bright-color-1': 'var(--liberty-brand-bright-color)',
-        '--brand-bright-color-2': selectByTheme(CONFIG['skin.clue.brand_bright_color_2'] ?? 'var(--liberty-brand-bright-color)', 'var(--liberty-brand-bright-color)'),
+        '--clue-brand-color': brand_color(),
+        '--clue-brand-dark-color': selectByTheme(CONFIG['skin.clue.brand_dark_color_1'] ?? darkenColor(brand_color()), '#16171a'),
+        '--clue-brand-bright-color': selectByTheme(CONFIG['skin.clue.brand_bright_color_1'] ?? lightenColor(brand_color()), '#383b40'),
+        '--clue-brand-notice-color': selectByTheme(CONFIG['skin.clue.brand_notice_color'] ?? '#d9edf7', '#d9edf7'),
+        '--clue-navbar-logo-image': CONFIG['logo_image'] && `url(${CONFIG['logo_image']})`,
+        '--clue-navbar-logo-minimum-width': CONFIG['skin.clue.navbar_logo_minimum_width'],
+        '--clue-navbar-logo-width': CONFIG['skin.clue.navbar_logo_width'],
+        '--clue-navbar-logo-size': CONFIG['skin.clue.navbar_logo_size'],
+        '--clue-navbar-logo-padding': CONFIG['skin.clue.navbar_logo_padding'],
+        '--clue-navbar-logo-text-padding': CONFIG['skin.clue.navbar_logo_text_padding'],
+        '--clue-navbar-logo-minimum-margin-left': CONFIG['skin.clue.navbar_logo_minimum_margin_left'],
+        '--clue-navbar-logo-margins-left': CONFIG['skin.clue.navbar_logo_margin_left'],
+        '--clue-navbar-logo-minimum-margin': CONFIG['skin.clue.navbar_logo_minimum_margin'],
+        '--clue-navbar-logo-minimum-margin-top': CONFIG['skin.clue.navbar_logo_minimum_margin_top'],
+        '--clue-navbar-logo-margin-top': CONFIG['skin.clue.navbar_logo_margin_top'],
+        '--clue-navbar-logo-margin': CONFIG['skin.clue.navbar_logo_margin'],
+        '--brand-color-1': 'var(--clue-brand-color)',
+        '--brand-color-2': selectByTheme(CONFIG['skin.clue.brand_color_2'] ?? 'var(--clue-brand-color)', 'var(--clue-brand-color)'),
+        '--brand-bright-color-1': 'var(--clue-brand-bright-color)',
+        '--brand-bright-color-2': selectByTheme(CONFIG['skin.clue.brand_bright_color_2'] ?? 'var(--clue-brand-bright-color)', 'var(--clue-brand-bright-color)'),
         '--text-color': selectByTheme('#373a3c', '#ddd'),
         '--article-background-color': selectByTheme('#fff', '#1d2023')
     }
 
-    style.textContent = `.Liberty {${Object.keys(styles).filter(a => styles[a]).map(a => `${a}:${styles[a]};`).join('')}}`;
+    style.textContent = `.Clue {${Object.keys(styles).filter(a => styles[a]).map(a => `${a}:${styles[a]};`).join('')}}`;
     document.head.appendChild(style);
 }
 setStyles();

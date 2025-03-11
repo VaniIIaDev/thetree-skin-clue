@@ -109,22 +109,22 @@ del, s, strike {
 /* 태그 수정 End */
 
 /* 백그라운드 색 지정 */
-.Liberty, body {
+.clue, body {
     background-color: #f5f5f5;
 }
 /* 백그라운드 색 지정 End*/
 
 /* 컨텐츠 넓이 수정 및 가운대 정렬 */
-.Liberty .nav-wrapper .navbar, .Liberty .content-wrapper {
+.Clue .nav-wrapper .navbar, .Clue .content-wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
 /* 컨텐츠 넓이 수정 및 가운대 정렬 End */
 
 /* 네비 수정 */
-.Liberty .nav-wrapper {
+.Clue .nav-wrapper {
     min-height: 2.8rem;
-    background-color: var(--liberty-brand-color, #4188f1);
+    background-color: var(--clue-brand-color, #4188f1);
     position: absolute;
     z-index: 100;
     box-shadow: none;
@@ -134,89 +134,89 @@ del, s, strike {
     top: 0;
 }
 
-.Liberty .nav-wrapper.navbar-fixed-top {
+.Clue .nav-wrapper.navbar-fixed-top {
     position: fixed;
 }
 
-.Liberty .nav-wrapper .navbar {
+.Clue .nav-wrapper .navbar {
     padding: 0 0.2rem;
     border: 0;
     border-radius: 0;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-brand {
+.Clue .nav-wrapper .navbar .navbar-brand {
     height: 2.8rem;
-    width: var(--liberty-navbar-logo-width, 7rem);
-    background-image: var(--liberty-navbar-logo-image, none);
+    width: var(--clue-navbar-logo-width, 7rem);
+    background-image: var(--clue-navbar-logo-image, none);
     background-repeat: no-repeat no-repeat;
-    background-size: auto var(--liberty-navbar-logo-size, 1.9rem);
+    background-size: auto var(--clue-navbar-logo-size, 1.9rem);
     background-position: left center;
-    margin-left: var(--liberty-naver-logo-margin-left, 10px) !important;
-    margin-top: var(--liberty-naver-logo-margin-top, 0) !important;
-    margin: var(--liberty-navbar-logo-margin, 0);
+    margin-left: var(--clue-naver-logo-margin-left, 10px) !important;
+    margin-top: var(--clue-naver-logo-margin-top, 0) !important;
+    margin: var(--clue-navbar-logo-margin, 0);
     /* display: grid;
     place-content: center; */
-    padding-top: var(--liberty-navbar-logo-text-padding, 5px);
+    padding-top: var(--clue-navbar-logo-text-padding, 5px);
 }
 
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item {
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item {
     margin: 0;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fa {
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item .fa {
     margin-right: 0.5rem;
     font-size: 1rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .ion {
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item .ion {
     margin-right: 0.5rem;
     font-size: 1rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .dropdown-menu .fa {
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item .dropdown-menu .fa {
     margin-right: 0.5rem;
     font-size: 1rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .dropdown-menu .ion {
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item .dropdown-menu .ion {
     margin-right: 0.5rem;
     font-size: 1.3rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
     color: #fff;
     font-size: 1rem;
     padding: 0.7rem 0.8rem;
     line-height: 1.4rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover {
-	background-color: var(--liberty-brand-dark-color, #214479);
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover {
+	background-color: var(--clue-brand-dark-color, #214479);
 }
 
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus {
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus {
     transition: 0.3s;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .dropdown-menu {
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item .dropdown-menu {
     border-radius: 12px !important;
     margin-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .dropdown-toggle::after {
+.Clue .nav-wrapper .navbar .navbar-nav .nav-item .dropdown-toggle::after {
     margin-right: 0;
     margin-left: 0.35rem;
 }
 
-.Liberty .nav-wrapper .navbar .form-inline {
+.Clue .nav-wrapper .navbar .form-inline {
     padding: 0.4rem 0;
     float: right;
 }
 
-.Liberty .nav-wrapper .navbar .form-inline .form-control {
+.Clue .nav-wrapper .navbar .form-inline .form-control {
     font-size: 0.8rem;
     height: 2rem;
     width: 10.8rem;
@@ -227,11 +227,11 @@ del, s, strike {
     float: none;
 }
 
-.Liberty .nav-wrapper .navbar .form-inline .form-control:focus {
+.Clue .nav-wrapper .navbar .form-inline .form-control:focus {
     border-right-color: #e1e8ed;
 }
 
-.Liberty .nav-wrapper .navbar .form-inline .input-search {
+.Clue .nav-wrapper .navbar .form-inline .input-search {
     display: table-cell;
     float: left;
     position: relative;
@@ -239,48 +239,48 @@ del, s, strike {
     z-index: 4;
 }
 
-.Liberty .nav-wrapper .navbar .form-inline .btn {
+.Clue .nav-wrapper .navbar .form-inline .btn {
     height: 2rem;
     width: 2rem;
     color: #4f5b63;
     padding: 0.2rem 0.4rem;
 }
 
-/* .Liberty .nav-wrapper .navbar .form-inline .btn:hover, .Liberty .nav-wrapper .navbar .form-inline .btn:focus {
-    background-color: var(--liberty-brand-color, #4188f1);
+/* .Clue .nav-wrapper .navbar .form-inline .btn:hover, .Clue .nav-wrapper .navbar .form-inline .btn:focus {
+    background-color: var(--clue-brand-color, #4188f1);
     color: #fff;
     outline: 0;
     transition: .3s;
 } */
 
-.Liberty .nav-wrapper .navbar .form-inline .btn .fa {
-    color: var(--liberty-brand-color, #4188f1);
+.Clue .nav-wrapper .navbar .form-inline .btn .fa {
+    color: var(--clue-brand-color, #4188f1);
     width: 0.9rem;
 }
 
-.Liberty .nav-wrapper .navbar .form-inline .btn .ion {
-    color: var(--liberty-brand-color, #4188f1);
+.Clue .nav-wrapper .navbar .form-inline .btn .ion {
+    color: var(--clue-brand-color, #4188f1);
     width: 0.9rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login {
+.Clue .nav-wrapper .navbar .navbar-login {
     float: right;
     padding-left: 0.8rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .fa {
+.Clue .nav-wrapper .navbar .navbar-login .fa {
     margin-right: 0.5rem;
     font-size: 1rem;
     line-height: 1.4rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .ion {
+.Clue .nav-wrapper .navbar .navbar-login .ion {
     margin-right: 0.5rem;
     font-size: 1rem;
     line-height: 1.4rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .login-icon {
+.Clue .nav-wrapper .navbar .navbar-login .login-icon {
     color: #fff;
     font-size: 1.5rem;
     line-height: 1.4rem;
@@ -301,17 +301,17 @@ del, s, strike {
     width: 1.5rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .login-menu {
+.Clue .nav-wrapper .navbar .navbar-login .login-menu {
     float: left;
     cursor: pointer;
     padding: 0.4rem 0;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .login-menu a:after {
+.Clue .nav-wrapper .navbar .navbar-login .login-menu a:after {
     display: none;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .profile-img {
+.Clue .nav-wrapper .navbar .navbar-login .profile-img {
     width: 2rem;
     height: 2rem;
     border-radius: 0.35rem;
@@ -319,19 +319,19 @@ del, s, strike {
     border: 1px solid #e1e8ed;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .logout-btn {
+.Clue .nav-wrapper .navbar .navbar-login .logout-btn {
     margin-left: 0.8rem;
     display: inline-block;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu {
+.Clue .nav-wrapper .navbar .navbar-login .login-dropdown-menu {
     top: 120%;
     right: -0.5rem;
     z-index: 1002;
     border-radius: 12px;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu:before, .Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu:after {
+.Clue .nav-wrapper .navbar .navbar-login .login-dropdown-menu:before, .Clue .nav-wrapper .navbar .navbar-login .login-dropdown-menu:after {
     bottom: 100%;
     border: solid transparent;
     content: " ";
@@ -340,21 +340,21 @@ del, s, strike {
     right: auto;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu:before {
+.Clue .nav-wrapper .navbar .navbar-login .login-dropdown-menu:before {
     border-bottom-color: #e1e8ed;
     border-width: 0.8rem;
     left: auto;
     right: 0.6rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu:after {
+.Clue .nav-wrapper .navbar .navbar-login .login-dropdown-menu:after {
     border-bottom-color: #fff;
     border-width: 0.78rem;
     left: auto;
     right: 0.6rem;
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu .username {
+.Clue .nav-wrapper .navbar .navbar-login .login-dropdown-menu .username {
     cursor: default;
     text-align: right;
     font-size: 1rem;
@@ -363,38 +363,38 @@ del, s, strike {
     padding: 3px 15px
 }
 
-.Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu .username:hover {
+.Clue .nav-wrapper .navbar .navbar-login .login-dropdown-menu .username:hover {
     background-color: transparent;
     color: #373a3c;
 }
 /* 네비 수정 End */
 
 /* 오른쪽 메뉴 수정 */
-.Liberty .content-wrapper .liberty-sidebar {
+.Clue .content-wrapper .clue-sidebar {
     float: right;
     width: 18rem;
     position: relative;
     word-break: break-all;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed {
     position: absolute;
     z-index: 1;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed.fixed {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed.fixed {
     position: fixed;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent {
     width: 18rem;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav {
     border: 0;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav .nav-item {
     width: 18rem;
     border: 1px solid #e1e8ed;
     border-bottom: 0;
@@ -403,7 +403,7 @@ del, s, strike {
     background-color: #f5f8fa;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link {
     border: 0;
     border-radius: 0;
     border-top-left-radius: 12px;
@@ -415,28 +415,28 @@ del, s, strike {
     position: relative;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link.active,
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:hover,
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:focus,
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:active {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link.active,
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:hover,
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:focus,
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:active {
     color: #373a3c;
     background-color: #fff;
 }
 
-/* .Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+/* .Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
     position: absolute;
     left: -1px;
     bottom: -1px;
     content: " ";
     width: 18rem;
     display: block;
-    border-bottom: 2px solid var(--liberty-brand-color, #4188f1);
+    border-bottom: 2px solid var(--clue-brand-color, #4188f1);
 } */
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-content {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-content {
     background-color: #fff;
     border: 1px solid #e1e8ed;
     border-top: 0;
@@ -444,13 +444,13 @@ del, s, strike {
     border-bottom-right-radius: 12px;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-content .live-recent-list {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-content .live-recent-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-content .live-recent-list li {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-content .live-recent-list li {
     /* border-bottom: 1px solid #e1e8ed; */
     padding: 0.2rem 0.6rem;
     border-radius: 12px;
@@ -458,29 +458,29 @@ del, s, strike {
     margin-right: 5px;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-content .live-recent-list li:last-child {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-content .live-recent-list li:last-child {
     margin-bottom: 10px;
     border-bottom: none;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-content .live-recent-list .recent-item {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-content .live-recent-list .recent-item {
     font-size: 0.80rem;
     color: #373a3c;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-content .live-recent-list .recent-item .new {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-content .live-recent-list .recent-item .new {
     font-size: 0.80rem;
     color: #b73333;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-content .live-recent-list .recent-item.removed {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-content .live-recent-list .recent-item.removed {
     text-decoration: none !important;
     color: #777;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-footer {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-footer {
     background-color: #f5f8fa;
     border: 1px solid #e1e8ed;
     border-top: 0;
@@ -490,18 +490,18 @@ del, s, strike {
     padding: 0.4rem 0.6rem;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-footer .label {
-    background-color: var(--liberty-brand-color, #4188f1);
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-footer .label {
+    background-color: var(--clue-brand-color, #4188f1);
     padding: 0.4rem;
     font-size: 0.8rem;
     font-weight: 400;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-footer .label:hover {
-	background-color: var(--liberty-brand-dark-color, #214479);
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-footer .label:hover {
+	background-color: var(--clue-brand-dark-color, #214479);
 }
 
-.Liberty .content-wrapper .liberty-sidebar .right-ads {
+.Clue .content-wrapper .clue-sidebar .right-ads {
     position: absolute;
     top: 25.73rem;
     width: 15rem;
@@ -509,27 +509,27 @@ del, s, strike {
 /* 오른쪽 메뉴 수정 End */
 
 /* 컨텐츠 수정 */
-.Liberty .content-wrapper {
+.Clue .content-wrapper {
     margin-top: 3.33rem;
 }
 
-.Liberty .content-wrapper .liberty-content {
+.Clue .content-wrapper .clue-content {
     margin-right: 19rem;
     padding: 0;
     padding-bottom: 1rem;
     word-break: break-all;
 }
 
-.Liberty .content-wrapper.hide-sidebar .liberty-sidebar {
+.Clue .content-wrapper.hide-sidebar .clue-sidebar {
     display: none;
 }
 
-.Liberty .content-wrapper.hide-sidebar .liberty-content {
+.Clue .content-wrapper.hide-sidebar .clue-content {
     margin-right: 0 !important;
 }
 
-.Liberty .content-wrapper .liberty-content .notification .label {
-    background-color: var(--liberty-brand-notice-color, #d9edf7);
+.Clue .content-wrapper .clue-content .notification .label {
+    background-color: var(--clue-brand-notice-color, #d9edf7);
     color: #2f4f4f;
     padding: 10px;
     line-height: 1rem;
@@ -542,61 +542,61 @@ del, s, strike {
     border-radius: 12px;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-header {
+.Clue .content-wrapper .clue-content .clue-content-header {
     border: 1px solid #e1e8ed;
     border-bottom: 0px !important;
     border-radius: 12px 12px 0 0;
     background-color: #f5f8fa;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-header .liberty-notice {
+.Clue .content-wrapper .clue-content .clue-content-header .clue-notice {
     margin: 1rem;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-header .liberty-notice ul {
+.Clue .content-wrapper .clue-content .clue-content-header .clue-notice ul {
     list-style-image: none;
     list-style-type: none;
     text-align: center;
     line-height: 1.8rem;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-header .title {
+.Clue .content-wrapper .clue-content .clue-content-header .title {
     padding: 1rem;
     min-height: 65px;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-header .contentSub {
+.Clue .content-wrapper .clue-content .clue-content-header .contentSub {
     margin-top: -0.5rem;
     padding: 1rem;
     padding-top: 0;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1 {
+.Clue .content-wrapper .clue-content .clue-content-header .title>h1 {
     color: #000;
     font-weight: bold;
     margin: 0;
     line-height: 1.1;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1>small {
+.Clue .content-wrapper .clue-content .clue-content-header .title>h1>small {
     margin-left: 0.4rem;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1>a {
+.Clue .content-wrapper .clue-content .clue-content-header .title>h1>a {
     color: #000;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-header .title .namespace {
-    box-shadow: inset 0 -0.3em 0 var(--liberty-brand-bright-color);
+.Clue .content-wrapper .clue-content .clue-content-header .title .namespace {
+    box-shadow: inset 0 -0.3em 0 var(--clue-brand-bright-color);
     color: #545454;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-header .header-ads {
+.Clue .content-wrapper .clue-content .clue-content-header .header-ads {
     margin: 1rem;
     margin-bottom: 0;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-main {
+.Clue .content-wrapper .clue-content .clue-content-main {
     border-left: 1px solid #e1e8ed;
     border-right: 1px solid #e1e8ed;
     background-color: #fff;
@@ -604,12 +604,12 @@ del, s, strike {
     overflow: visible;
 }
 
-.Liberty .content-wrapper .footer-recent {
+.Clue .content-wrapper .footer-recent {
     margin: 0.3rem 0 3rem 0;
     border: 1px solid #e1e8ed;
 }
 
-.Liberty .content-wrapper .footer-recent .live-recent-footer {
+.Clue .content-wrapper .footer-recent .live-recent-footer {
     background-color: #f5f8fa;
     border: 1px solid #e1e8ed;
     border-bottom-left-radius: .35rem;
@@ -619,20 +619,20 @@ del, s, strike {
     text-align: right;
 }
 
-.Liberty .content-wrapper .footer-recent .live-recent-footer .label {
-    background-color: var(--liberty-brand-color, #4188f1);
+.Clue .content-wrapper .footer-recent .live-recent-footer .label {
+    background-color: var(--clue-brand-color, #4188f1);
     font-size: .8rem;
     font-weight: 400;
     padding: .4rem;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-main .social-buttons {
+.Clue .content-wrapper .clue-content .clue-content-main .social-buttons {
     float: right;
     margin-bottom: 1rem;
     width: 100%;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-main .social-buttons>div {
+.Clue .content-wrapper .clue-content .clue-content-main .social-buttons>div {
     float: right;
     width: 2.5rem;
     height: 2.5rem;
@@ -649,22 +649,22 @@ del, s, strike {
     font-size: 1.8rem;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-main .social-buttons>.facebook {
+.Clue .content-wrapper .clue-content .clue-content-main .social-buttons>.facebook {
     background-color: #5d82d1;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-main .social-buttons>.twitter {
+.Clue .content-wrapper .clue-content .clue-content-main .social-buttons>.twitter {
     background-color: #40bff5;
 }
 
-.Liberty .content-wrapper .liberty-content .liberty-content-main .social-buttons>.google {
+.Clue .content-wrapper .clue-content .clue-content-main .social-buttons>.google {
     background-color: #eb5e4c;
     display: none;
 }
 /* 컨텐츠 수정 End */
 
 /* 컨텐츠 하단 수정 */
-.Liberty .content-wrapper .liberty-footer {
+.Clue .content-wrapper .clue-footer {
     border: 1px solid #e1e8ed;
     border-radius: 0 0 12px 12px;
     background-color: #f5f8fa;
@@ -672,7 +672,7 @@ del, s, strike {
     clear: both;
 }
 
-.Liberty .content-wrapper .liberty-footer ul {
+.Clue .content-wrapper .clue-footer ul {
     list-style-type: none;
     list-style-image: none;
     display: inline-block;
@@ -691,7 +691,7 @@ del, s, strike {
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: var(--liberty-brand-color, #4188f1);
+    background-color: var(--clue-brand-color, #4188f1);
     color: #fff;
     transition: 0.3s;
 }
@@ -790,7 +790,7 @@ div.scroll-buttons a {
 
 .random-btn-txt {
     height: 13.5px;
-    color: var(--liberty-brand-color, #4188f1) !important;
+    color: var(--clue-brand-color, #4188f1) !important;
 }
 
 .btn-discuss-progress {
@@ -798,25 +798,25 @@ div.scroll-buttons a {
 }
 
 .starred_1 {
-    background-color:var(--liberty-brand-color);
+    background-color:var(--clue-brand-color);
     color: #fff;
 }
 
 .theseed-light-mode .btn-group .fa {
-	color: var(--liberty-brand-color, #4188f1);
+	color: var(--clue-brand-color, #4188f1);
 }
 
 .theseed-light-mode .btn-group .ion {
-	color: var(--liberty-brand-color, #4188f1);
+	color: var(--clue-brand-color, #4188f1);
 }
 
 .notice-icon {
     margin-right: 10px;
     font-size: 25px;
-    color: var(--liberty-brand-color, #4188f1);
+    color: var(--clue-brand-color, #4188f1);
 }
 
-#liberty-recent-tab1 {
+#clue-recent-tab1 {
     padding: .25em .1em .25em 1em;
 }
 
@@ -837,7 +837,7 @@ div.scroll-buttons a {
     width: 190px;
 }
 
-.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-content .live-recent-list li:hover {
+.Clue .content-wrapper .clue-sidebar .clue-right-fixed .live-recent .live-recent-content .live-recent-list li:hover {
     background: #eee;
 }
 
@@ -846,8 +846,8 @@ div.scroll-buttons a {
 }
 
 .btn-recentchanges {
-    border: var(--liberty-brand-color);
-    background: var(--liberty-brand-color);
+    border: var(--clue-brand-color);
+    background: var(--clue-brand-color);
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -875,7 +875,7 @@ div.scroll-buttons a {
     color: #777;
 }
 
-.Liberty .nav-wrapper .navbar .form-inline .btn {
+.Clue .nav-wrapper .navbar .form-inline .btn {
     border-color: transparent;
 }
 

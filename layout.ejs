@@ -19,7 +19,7 @@ window.requestable = <%=JSON.stringify(requestable)%>;
   @import "/skins/<%=skin%>/css/layouts/searchForm.css";
 </style>
 
-<div class="Liberty">
+<div class="Clue">
   <div id="top"></div>
   <div class="nav-wrapper" :class="{ 'navbar-fixed-top': $store.state.localConfig['clue.fixed_navbar'] }">
     <nav class="navbar navbar-dark">
@@ -127,8 +127,8 @@ window.requestable = <%=JSON.stringify(requestable)%>;
     </nav>
   </div>
   <div class="content-wrapper" :class="{ 'hide-sidebar': $store.state.localConfig['clue.sidebar'] === 'hide' || $store.state.localConfig['clue.sidebar'] === 'footer' }">
-    <div class="liberty-sidebar">
-      <div class="liberty-right-fixed" :class="{ 'fixed': $store.state.localConfig['clue.sidebar'] === 'fix' }">
+    <div class="clue-sidebar">
+      <div class="clue-right-fixed" :class="{ 'fixed': $store.state.localConfig['clue.sidebar'] === 'fix' }">
         <div class="live-recent">
           <div class="live-recent-header">
             <ul class="nav nav-tabs">
@@ -147,13 +147,13 @@ window.requestable = <%=JSON.stringify(requestable)%>;
         </div>
       </div>
     </div>
-    <div id="content" class="container-fluid liberty-content">
+    <div id="content" class="container-fluid clue-content">
       <%if(config.sitenotice) {%>
       <div id="site-notice" class="notification">
         <span class="label"><span class="fa fa-solid fa-circle-exclamation notice-icon"></span> <span style="vertical-align: 4px;"><%-config.sitenotice%></span></span>
       </div>
       <%}%>
-      <div class="liberty-content-header">
+      <div class="clue-content-header">
         <%-include('./layouts/contentTool')%>
         <div class="title">
           <%if(page.data.document && page.viewName !== 'error') {%>
@@ -219,7 +219,7 @@ window.requestable = <%=JSON.stringify(requestable)%>;
           <%}%>
         </div>
       </div>
-      <div class="liberty-content-main wiki-article">
+      <div class="clue-content-main wiki-article">
         <%if(page.data.edit_acl_message) {%>
           <div class="thetree-alert thetree-alert-danger" x-cloak x-show="$store.skin.isShowACLMessage">
             <div class="thetree-alert-content">
@@ -263,20 +263,20 @@ window.requestable = <%=JSON.stringify(requestable)%>;
         </div>
         <%if(page.viewName === 'license') {%>
         <div>
-          <h2>Clue skin license</h2>
+          <h2>clue skin license</h2>
           <pre><%=getSkinFile('LICENSE')%></pre>
         </div>
         <%}%>
         <div class="clearfix"></div>
       </div>
-      <div id="bottom" class="liberty-footer">
+      <!-- <div id="bottom" class="clue-footer">
         <ul class="footer-places"><%-config.footer_html%></ul>
         <ul class="footer-icons">
           <li class="footer-poweredbyico">
             <a href="//github.com/VaniIIaDev/thetree-skin-clue">clue</a> | <a href="//github.com/wjdgustn/thetree">the tree</a>
           </li>
         </ul>
-      </div>
+      </div> -->
       <div 
     x-cloak 
     x-show="(window.innerWidth <= 768 && $store.state.localConfig['clue.sidebar'] !== 'hide') 
@@ -317,6 +317,14 @@ window.requestable = <%=JSON.stringify(requestable)%>;
           </ul>
         </div>
         <%-include('./layouts/recentCard', {limit:10})%>
+      </div>
+      <div id="bottom" class="clue-footer">
+        <ul class="footer-places"><%-config.footer_html%></ul>
+        <ul class="footer-icons">
+          <li class="footer-poweredbyico">
+            <a href="//github.com/VaniIIaDev/thetree-skin-clue">clue</a> | <a href="//github.com/wjdgustn/thetree">the tree</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

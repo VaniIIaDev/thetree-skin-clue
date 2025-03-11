@@ -5,7 +5,7 @@
     }
 
     .tools-btn .fa-star,.tools-btn .fa-star-o {
-        color: var(--liberty-brand-color, #e69720);
+        color: var(--clue-brand-color, #e69720);
         margin-right: 0.1em;
     }
 
@@ -113,7 +113,7 @@
 .theseed-dark-mode .content-tools .dropdown-item.admin {
     background-color: #711;
     color: white;
-    border-top: 1px var(--liberty-brand-dark-color, #16171a) solid;
+    border-top: 1px var(--clue-brand-dark-color, #16171a) solid;
 }
 
 .theseed-dark-mode .content-tools .dropdown-item.admin:hover {
