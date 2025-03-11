@@ -253,4 +253,8 @@
     .recent-head-title {
         border-top: 1px solid #e1e8ed;
     }
+
+    .live-recent-content {
+        border-radius: 0 !important;
+    }
 }

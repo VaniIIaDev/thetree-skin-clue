@@ -546,7 +546,8 @@ del, s, strike {
     border: 1px solid #e1e8ed;
     border-bottom: 0px !important;
     border-radius: 12px 12px 0 0;
-    background-color: #f5f8fa;
+    /* background-color: #f5f8fa; */
+    background-color: var(--clue-main-header-background-color, #f5f8fa);
 }
 
 .Clue .content-wrapper .clue-content .clue-content-header .clue-notice {
@@ -890,4 +891,16 @@ div.scroll-buttons a {
 
 .dr-admin .ion {
     vertical-align: text-bottom;
+}
+
+.Clue .content-wrapper .clue-content .clue-content-main {
+    padding-bottom: 30px !important;
+}
+
+a {
+	color: var(--clue-main-content-link-color, rgb(2, 117, 216));
+}
+
+.user-text-name {
+	color: var(--clue-main-content-username-color, rgb(2, 117, 216));
 }

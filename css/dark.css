@@ -117,7 +117,11 @@ body.theseed-dark-mode {
 }
 
 .theseed-dark-mode a {
-	color: #E69720;
+	color: var(--clue-main-content-link-dark-color, #E69720);
+}
+
+.theseed-dark-mode .user-text-name {
+	color: var(--clue-main-content-username-dark-color, #E69720);
 }
 
 .theseed-dark-mode a:hover {
