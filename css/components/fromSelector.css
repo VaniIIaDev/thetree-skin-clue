@@ -22,14 +22,14 @@
         font-size: 0.9rem;
     }
 
-    .theseed-dark-mode input[type="text"],
-    .theseed-dark-mode button {
+    .thetree-dark-mode input[type="text"],
+    .thetree-dark-mode button {
         background-color: #27292d;
         border-color: #383b40;
         color: #ddd;
     }
 
-    .theseed-dark-mode button:hover {
+    .thetree-dark-mode button:hover {
         background-color: #2d2f34;
         border-color: #383b40;
     }
