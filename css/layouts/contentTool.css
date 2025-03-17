@@ -75,48 +75,48 @@
     }
 }
 
-.theseed-dark-mode .content-tools .tools-btn:active,
-.theseed-dark-mode .content-tools .tools-btn:focus,
-.theseed-dark-mode .content-tools .tools-btn:hover {
+.thetree-dark-mode .content-tools .tools-btn:active,
+.thetree-dark-mode .content-tools .tools-btn:focus,
+.thetree-dark-mode .content-tools .tools-btn:hover {
     background-color: #383b40;
     color: white;
 }
 
-.theseed-dark-mode .content-tools .btn.btn-danger.tools-btn,
-.theseed-dark-mode .content-tools .btn.btn-danger.tools-btn:hover,
-.theseed-dark-mode .content-tools .btn.btn-danger.tools-btn:active,
-.theseed-dark-mode .content-tools .btn.btn-danger.tools-btn:focus {
+.thetree-dark-mode .content-tools .btn.btn-danger.tools-btn,
+.thetree-dark-mode .content-tools .btn.btn-danger.tools-btn:hover,
+.thetree-dark-mode .content-tools .btn.btn-danger.tools-btn:active,
+.thetree-dark-mode .content-tools .btn.btn-danger.tools-btn:focus {
     background-color: #d9534f;
     color: #ddd;
 }
 
-.theseed-dark-mode .content-tools .tools-btn.btn-discuss-progress {
+.thetree-dark-mode .content-tools .tools-btn.btn-discuss-progress {
     background-color: #325a56;
 }
 
-.theseed-dark-mode .content-tools .tools-btn.btn-discuss-progress:hover,
-.theseed-dark-mode .content-tools .tools-btn.btn-discuss-progress:active,
-.theseed-dark-mode .content-tools .tools-btn.btn-discuss-progress:focus {
+.thetree-dark-mode .content-tools .tools-btn.btn-discuss-progress:hover,
+.thetree-dark-mode .content-tools .tools-btn.btn-discuss-progress:active,
+.thetree-dark-mode .content-tools .tools-btn.btn-discuss-progress:focus {
     background-color: #438a83;
 }
 
-.theseed-dark-mode .content-tools .tools-btn.btn-info {
+.thetree-dark-mode .content-tools .tools-btn.btn-info {
     background-color: #334351;
 }
 
-.theseed-dark-mode .content-tools .tools-btn.btn-info:hover,
-.theseed-dark-mode .content-tools .tools-btn.btn-info:focus,
-.theseed-dark-mode .content-tools .tools-btn.btn-info:active {
+.thetree-dark-mode .content-tools .tools-btn.btn-info:hover,
+.thetree-dark-mode .content-tools .tools-btn.btn-info:focus,
+.thetree-dark-mode .content-tools .tools-btn.btn-info:active {
     background-color: #2a343d;
 }
 
-.theseed-dark-mode .content-tools .dropdown-item.admin {
+.thetree-dark-mode .content-tools .dropdown-item.admin {
     background-color: #711;
     color: white;
     border-top: 1px var(--clue-brand-dark-color, #16171a) solid;
 }
 
-.theseed-dark-mode .content-tools .dropdown-item.admin:hover {
+.thetree-dark-mode .content-tools .dropdown-item.admin:hover {
     background-color: #970000;
 }
 

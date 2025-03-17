@@ -803,11 +803,11 @@ div.scroll-buttons a {
     color: #fff;
 }
 
-.theseed-light-mode .btn-group .fa {
+.thetree-light-mode .btn-group .fa {
 	color: var(--clue-brand-color, #4188f1);
 }
 
-.theseed-light-mode .btn-group .ion {
+.thetree-light-mode .btn-group .ion {
 	color: var(--clue-brand-color, #4188f1);
 }
 

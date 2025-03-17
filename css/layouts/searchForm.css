@@ -25,15 +25,15 @@
     }
 }
 
-.theseed-dark-mode #search .v-autocomplete-list {
+.thetree-dark-mode #search .v-autocomplete-list {
     background-color: #2d2f34;
     border: 1px solid #383b40;
 }
 
-.theseed-dark-mode #search .v-autocomplete-list-item {
+.thetree-dark-mode #search .v-autocomplete-list-item {
     color: #ddd;
 }
 
-.theseed-dark-mode #search .v-autocomplete-list-item.v-autocomplete-item-active {
+.thetree-dark-mode #search .v-autocomplete-list-item.v-autocomplete-item-active {
     background-color: #383b40;
 }
