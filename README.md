@@ -1,6 +1,5 @@
 ## 개요
-the tree용 clue 스킨.
-haneul-liberty에서 파생됨.
+사용 권장 안함
 
 ## 원작
 - [haneul-liberty](https://github.com/VaniIIaDev/haneul-liberty) Made by [imitated seed](https://github.com/gdl-blue/imitated-seed-2)
