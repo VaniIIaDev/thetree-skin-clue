@@ -905,6 +905,6 @@ a {
 	color: var(--clue-main-content-username-color, rgb(2, 117, 216));
 }
 
-.wiki-content .wiki-table td {
-    background-color: #fff;
+.wiki-content .wiki-table {
+    background-color: var(--article-background-color);
 }
